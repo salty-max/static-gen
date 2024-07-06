@@ -60,7 +60,7 @@ This is the same paragraph on a new line
         block = "# heading"
         self.assertEqual(block_to_block_type(block), block_type_heading)
         block = "```\ncode\n```"
-        self.assertEqual(block_to_block_type(block), block_type_code)
+        self.assertEqual(block_to_block_type(block), block_type_codep)
         block = "> quote\n> more quote"
         self.assertEqual(block_to_block_type(block), block_type_quote)
         block = "* list\n* items"
